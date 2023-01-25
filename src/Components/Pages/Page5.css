@@ -1,0 +1,243 @@
+.page5bg {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+.Page5Content {
+	width: 90vw;
+	height: 90vh;
+	background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	opacity: 0;
+	transform: scale(0);
+	transition: all 500ms;
+	transition: all 500ms;
+	flex-direction: column;
+}
+.fadeIn {
+	opacity: 1;
+	transform: scale(1);
+	transition: all 500ms;
+	transition: all 500ms;
+}
+.fadeOut {
+	opacity: 0;
+	transform: scale(0);
+	transition: all 500ms;
+	transition: all 500ms;
+}
+.Page5Content h1 {
+	font-family: Uni Sans Demo;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 6vw;
+	line-height: 1vw;
+	text-align: center;
+
+	color: #ffffff;
+}
+.faqs {
+	width: 90%;
+	height: 80%;
+	display: flex;
+}
+.leftfaq,
+.rightfaq {
+	width: 50%;
+	height: 100%;
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* text-align: center; */
+	/* justify-content: space-around; */
+}
+.rightfaq {
+}
+.faq {
+	width: 90%;
+	height: 15vh;
+
+	background: rgba(0, 141, 200, 0.45);
+	box-shadow: 4px 0px 20px -7px rgba(0, 115, 199, 0.46);
+	border-radius: 28px;
+	backdrop-filter: blur(15px);
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	z-index: 1000000;
+	transition: all 0.3s;
+}
+
+.question {
+	height: 100%;
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'acumin-pro';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2vw;
+	text-align: center;
+
+	color: #ffffff;
+}
+.answer {
+	height: 0%;
+	opacity: 0;
+	width: 90%;
+	margin: auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'acumin-pro';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1vw;
+	text-align: right;
+	text-align: justify;
+	flex-direction: column;
+
+	color: #ffffff;
+	align-items: left;
+}
+.anchor {
+	font-family: 'acumin-pro';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1vw;
+	color: #ffffff;
+	display: inline;
+	text-align: left;
+	margin-left: 0px;
+}
+.show {
+	height: 20vh;
+	width: 90% !important;
+	transition: all 0.3s;
+}
+.show .question {
+	height: 25%;
+	transition: all 0.3s;
+}
+.show .answer {
+	height: 75%;
+	opacity: 1;
+	transition: all 0.3s;
+}
+/* @media screen and (max-width: 720px) { */
+.Page5Content {
+	width: 80vw;
+	height: 75vh;
+	/* background: rgba(255, 255, 255, 0.1); */
+	flex-direction: column;
+}
+.leftfaq {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	height: 80%;
+	justify-content: center;
+}
+.rightfaq {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	width: 0%;
+	height: 0%;
+}
+
+.Page5Content h1 {
+	font-size: 8vh;
+	line-height: 1vw;
+}
+.question {
+	font-size: 2vh;
+	text-align: center;
+}
+.show {
+	height: 30vh;
+	width: 90%;
+	transition: all 0.3s;
+}
+.answer,
+.anchor {
+	font-size: 1.3vh;
+	align-items: flex-start;
+}
+.leftfaq,
+.rightfaq {
+	display: flex;
+	transition: all 500ms;
+	height: 0;
+	width: 0;
+	opacity: 0;
+}
+.show .question {
+	height: 20%;
+	font-size: 100%;
+}
+.show .answer {
+	height: 80%;
+	font-size: 4.5vw;
+}
+.faqs {
+	flex-direction: column;
+}
+.btnBt {
+	width: 40%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 10000000000;
+}
+.btn {
+	width: 15%;
+}
+.dis {
+	opacity: 0.5;
+}
+.pageReveal {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+/* } */
+
+.asssd {
+	width: 20%;
+	display: flex;
+	justify-content: space-between;
+}
+.btn {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+	.btn {
+		width: 20%;
+	}
+	.asssd {
+		width: 80%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.carou {
+		width: 100%;
+		overflow: none;
+		position: relative;
+		z-index: 100000000000000;
+	}
+}

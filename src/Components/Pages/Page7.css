@@ -1,0 +1,179 @@
+.page7bg {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+.Page7Content {
+	width: 70vw;
+	height: 80vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	opacity: 0;
+	transform: scale(0);
+	transition: all 500ms;
+	transition: all 500ms;
+	flex-direction: column;
+	background: rgba(255, 255, 255, 0.027);
+	box-shadow: 3px 1px 38px -12px #00000094;
+	border-radius: 28px;
+	backdrop-filter: blur(50px);
+	min-height: 650px;
+}
+.fadeIn {
+	opacity: 1;
+	transform: scale(1);
+	transition: all 500ms;
+	transition: all 500ms;
+}
+.fadeOut {
+	opacity: 0;
+	transform: scale(0);
+	transition: all 500ms;
+	transition: all 500ms;
+}
+.Page7Content h1 {
+	font-family: Uni Sans Demo;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 6vw;
+	line-height: 1vw;
+	text-align: center;
+
+	color: #ffffff;
+}
+.sponsors {
+	height: 80%;
+	width: 100%;
+}
+.page {
+	width: 0%;
+	height: 0%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	transition: all 500ms ease-in-out;
+	position: fixed;
+	opacity: 0;
+}
+.dis {
+	opacity: 0.1;
+}
+.show {
+	opacity: 1;
+	width: 100%;
+	height: 60%;
+	transition: all 500ms ease-in-out;
+}
+.imgs {
+	width: 8vw;
+	transition: all 500ms;
+	margin: 0% 2%;
+	cursor: pointer;
+}
+.jb {
+	width: 6vw;
+}
+.imgs:hover {
+	transform: scale(1.15);
+	transition: all 500ms;
+}
+.line1 {
+	width: 80%;
+	height: 100%;
+	display: flex;
+	margin: 1% auto;
+	align-items: center;
+	justify-content: space-around;
+	/* margin-left: 14%; */
+	flex-wrap: wrap;
+}
+
+.line2 {
+	width: 80%;
+
+	display: flex;
+	margin: 1% auto;
+	align-items: center;
+	justify-content: space-around;
+}
+.line3 {
+	width: 80%;
+
+	display: flex;
+	margin: 1% auto;
+	align-items: center;
+	justify-content: space-around;
+}
+.al {
+	transform: rotate(180deg);
+}
+.arrows {
+	width: 50%;
+	margin: 2% auto;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	z-index: 1000000;
+	margin-top: 5%;
+}
+.arrow {
+	width: 5%;
+	cursor: pointer;
+	position: relative;
+	z-index: 1000000;
+}
+
+.qwsd {
+	width: 6vw;
+	height: 9vh;
+}
+.krp {
+	margin-bottom: 3%;
+}
+
+@media screen and (max-width: 720px) {
+	.Page7Content {
+		width: 80vw;
+		height: 65vh;
+		min-height: 65vh;
+		flex-direction: column;
+	}
+	.imgs {
+		width: 11vh;
+		margin: 2%;
+	}
+	.line1,
+	.line2,
+	.line3,
+	.line4,
+	.line5 {
+		width: 80%;
+	}
+	.sponsors {
+		width: 100%;
+	}
+	.page {
+		width: 100%;
+		height: 80%;
+	}
+	.arrow {
+		width: 10%;
+		position: relative;
+		z-index: 10000;
+	}
+	.lklk {
+		width: 8vh;
+	}
+	.jb {
+		height: 7vh;
+	}
+	.arrows {
+		margin-top: 5%;
+	}
+}

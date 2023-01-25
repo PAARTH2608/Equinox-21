@@ -1,0 +1,254 @@
+.page1bg {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+.Tilt {
+	z-index: 100000000000;
+}
+.Page1Content {
+	width: 50vw;
+	height: 60vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	opacity: 0;
+	transform: scale(0);
+	transition: all 500ms;
+	transition: all 500ms;
+
+	background: rgba(255, 255, 255, 0.027) !important;
+	box-shadow: 3px 1px 38px -12px #00000094 !important;
+	border-radius: 28px !important;
+	backdrop-filter: blur(50px) !important;
+	-webkit-backdrop-filter: blur(20px);
+	min-height: 500px;
+}
+.fadeIn {
+	opacity: 1;
+	transform: scale(1);
+	transition: all 500ms;
+	transition: all 500ms;
+}
+.fadeOut {
+	opacity: 0;
+	transform: scale(0);
+	transition: all 500ms;
+	transition: all 500ms;
+}
+.left,
+.right {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.equinoxlogo {
+	width: 80%;
+	/* height: 245px; */
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.dates {
+	font-family: 'Uni Sans Demo';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 2vw;
+	line-height: 19px;
+	text-align: right;
+	margin-top: 20%;
+	color: #ffffff;
+}
+.timer {
+	font-family: 'Uni Sans Demo';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 4vw;
+	line-height: 42px;
+	text-align: right;
+	color: #ffffff;
+	margin-top: 0;
+	margin-bottom: 10%;
+}
+
+#devfolio-apply-now {
+	-ms-flex-align: center;
+	-webkit-box-align: center;
+	align-items: center;
+	outline: none;
+	background-color: #3770ff;
+	border-radius: 3px;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+		sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-size: 18px;
+	font-weight: 600;
+	padding: 12px 20px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#devfolio-apply-now:not([disabled]) {
+	cursor: pointer;
+}
+
+#devfolio-apply-now:hover {
+	background-color: #2954bf !important;
+}
+.regNow {
+	cursor: pointer;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 120%;
+	color: #ffffff;
+	background-color: #3770ff;
+	width: 50%;
+	height: 7%;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: scale(1.2);
+}
+.links {
+	display: flex;
+	margin-top: 5%;
+	width: 50%;
+	align-items: center;
+	justify-content: space-between;
+}
+.linklogos {
+	margin: 2%;
+	cursor: pointer;
+	color: white;
+	/* transform: scale(1.8); */
+	font-size: 200%;
+	transition: all 0.5s;
+}
+.at {
+	width: 13%;
+}
+.linklogos:hover {
+	transform: scale(1.2);
+	transition: all 0.5s;
+}
+.contact {
+	width: 100%;
+	opacity: 0;
+	font-family: 'roboto';
+	font-style: normal;
+	color: white;
+	transition: all 0.3s;
+	text-align: center;
+}
+.showContact {
+	width: 100%;
+	height: auto;
+	opacity: 1;
+	text-align: center;
+	transition: all 0.3s;
+}
+.applyimg {
+	cursor: pointer;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	transition: all 0.3s;
+	width: 60%;
+}
+.applyimg:hover {
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.55));
+	transition: all 0.3s;
+}
+
+@media screen and (max-width: 1030px) {
+	.Page1Content {
+		width: 80vw;
+		height: 80vh;
+		flex-direction: column;
+		opacity: 1;
+	}
+	.regNow {
+		cursor: pointer;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 100%;
+		color: #ffffff;
+		background-color: #3770ff;
+		width: 50%;
+		height: 12%;
+		border-radius: 12px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transform: scale(1.2);
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	.links {
+		width: 20vw;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.Page1Content {
+		width: 80vw;
+		height: 80vh;
+		flex-direction: column;
+		opacity: 1;
+	}
+	.equinoxlogo {
+		height: 75%;
+		/* width: 55%; */
+		width: auto;
+	}
+	.left,
+	.right {
+		width: 100%;
+		height: 50%;
+	}
+	.left {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.right {
+		/* height: 60%; */
+		justify-content: flex-start;
+	}
+	.dates {
+		font-size: 6vw;
+	}
+	.timer {
+		font-size: 9vw;
+		margin-bottom: 2%;
+	}
+	.linklogos {
+		width: 16%;
+	}
+	.at {
+		width: 14%;
+	}
+	.links {
+		width: 70%;
+		margin-top: 0;
+	}
+	.dates {
+		margin-top: 5%;
+	}
+	.regNow {
+		margin: 10% 0;
+	}
+}
